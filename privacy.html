@@ -68,7 +68,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">FishLogAI &mdash; Last updated: April 28, 2026</p>
+    <p class="subtitle">FishLogAI &mdash; Last updated: November 17, 2026</p>
 
     <h2>Introduction</h2>
     <p>
@@ -80,9 +80,10 @@
 
     <h2>Information We Collect</h2>
     <p>
-      FishLogAI is designed with a <strong>local-first</strong> approach. All of your data stays
-      on your device. We do not operate user accounts, cloud databases, or servers that receive
-      your personal data.
+      FishLogAI is designed with a <strong>local-first</strong> approach. Your fishing records stay
+      on your device. We do not operate user accounts or cloud databases for your fishing data.
+      We do operate one server of our own, which relays nautical chart tiles to the App (see
+      <em>Chart Tiles</em> below). It never receives your fishing records or your GPS position.
     </p>
     <ul>
       <li>
@@ -125,7 +126,7 @@
     <p>
       Your fishing log data is stored <strong>locally on your device only</strong>, using SQLite
       on iOS and Android. We do not maintain any central database or cloud storage of your fishing
-      records. No user data is transmitted to or stored on our servers.
+      records. Your fishing records are never transmitted to or stored on our servers.
     </p>
     <p>
       Your data is retained on your device for as long as the App is installed. If you delete the
@@ -148,8 +149,13 @@
         App Store account settings.
       </li>
       <li>
-        <strong>NOAA Chart Display Service / ENC Online:</strong> Nautical chart tiles are loaded
-        from NOAA&rsquo;s public servers to display navigational charts of U.S. waters.
+        <strong>Chart Tiles (our server) / NOAA Chart Display Service / ENC Online:</strong>
+        Nautical chart tiles for U.S. waters come from NOAA&rsquo;s public chart services. The App
+        requests them through our own chart-tile server, which fetches each tile from NOAA, keeps a
+        cache of the chart images, and relays them to the App. Like any web request, a tile request
+        reveals the map area being displayed and your device&rsquo;s IP address. We do not link tile
+        requests to you or your fishing records and do not keep logs of them; our hosting provider
+        may retain standard short-lived network logs for security and reliability.
       </li>
       <li>
         <strong>Canadian Hydrographic Service (CHS):</strong> Nautical chart tiles for Canadian
